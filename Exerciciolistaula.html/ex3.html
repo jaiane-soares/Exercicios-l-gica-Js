@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+            
+    let saldoMedio = parseFloat(prompt("Digite o saldo médio do cliente:"));
+    let valorCredito = 0;
+    let percentual = "";
+
+
+    if (saldoMedio <= 500) {
+        valorCredito = 0;
+        percentual = "0%";
+    } 
+    else if (saldoMedio >= 501 && saldoMedio <= 1000) {
+        valorCredito = saldoMedio * 0.30;
+        percentual = "30%";
+    } 
+    else if (saldoMedio >= 1001 && saldoMedio <= 3000) {
+        valorCredito = saldoMedio * 0.40;
+        percentual = "40%";
+    } 
+    else if (saldoMedio > 3001) {
+        valorCredito = saldoMedio * 0.50;
+        percentual = "50%";
+    }
+
+
+    console.log("Saldo Médio: R$ " + saldoMedio.toFixed(2));
+    console.log("Percentual aplicado: " + percentual);
+    console.log("Valor do Crédito Especial: R$ " + valorCredito.toFixed(2));
+
+    // Alerta para o usuário
+    alert("Saldo Médio: R$ " + saldoMedio.toFixed(2) + "\nCrédito Concedido: R$ " + valorCredito.toFixed(2));
+    </script>
+</body>
+</html>

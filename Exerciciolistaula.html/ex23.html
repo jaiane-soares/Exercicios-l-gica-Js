@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let faixa1 = 0; 
+let faixa2 = 0; 
+let faixa3 = 0; 
+
+for (let i = 1; i <= 20; i++) {
+    let num = parseFloat(prompt("Digite o " + i + "º número:"));
+
+    if (num >= 0 && num <= 100) {
+        faixa1++;
+    } else if (num >= 101 && num <= 200) {
+        faixa2++;
+    } else if (num > 200) {
+        faixa3++;
+    }
+}
+
+console.log("Entre 0 e 100: " + faixa1);
+console.log("Entre 101 e 200: " + faixa2);
+console.log("Maiores que 200: " + faixa3);
+    </script>
+</body>
+</html>

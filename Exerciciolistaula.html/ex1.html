@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+let totalCalorias = 0;
+
+
+let escolhaPrato = parseInt(prompt("Escolha o Prato:\n1 - Vegetariano\n2 - Peixe\n3 - Frango\n4 - Carne"));
+
+switch (escolhaPrato) {
+    case 1: totalCalorias += 180; break;
+    case 2: totalCalorias += 230; break;
+    case 3: totalCalorias += 250; break;
+    case 4: totalCalorias += 350; break;
+    default: alert("Prato inválido!");
+}
+
+
+let escolhaSobremesa = parseInt(prompt("Escolha a Sobremesa:\n1 - Abacaxi\n2 - Sorvete Diet\n3 - Mouse Diet\n4 - Mouse Chocolate"));
+
+switch (escolhaSobremesa) {
+    case 1: totalCalorias += 75; break;
+    case 2: totalCalorias += 110; break;
+    case 3: totalCalorias += 170; break;
+    case 4: totalCalorias += 200; break;
+    default: alert("Sobremesa inválida!");
+}
+
+
+let escolhaBebida = parseInt(prompt("Escolha a Bebida:\n1 - Chá\n2 - Suco de Laranja\n3 - Suco de Melão\n4 - Refrigerante Diet"));
+
+switch (escolhaBebida) {
+    case 1: totalCalorias += 20; break;
+    case 2: totalCalorias += 70; break;
+    case 3: totalCalorias += 100; break;
+    case 4: totalCalorias += 65; break;
+    default: alert("Bebida inválida!");
+}
+
+
+alert("O total de calorias da sua refeição é: " + totalCalorias + " cal");
+
+    </script>
+</body>
+</html>
