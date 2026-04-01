@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let somaNotas = 0;
+const totalAvaliacoes = 6;
+
+
+for (let i = 1; i <= totalAvaliacoes; i++) {
+    let nota;
+
+    
+    do {
+        nota = Number(prompt("Digite a nota " + i + " (de 0 a 10):"));
+
+        if (nota < 0 || nota > 10 || isNaN(nota)) {
+            alert("Valor inválido! Digite uma nota entre 0 e 10.");
+        }
+
+    } while (nota < 0 || nota > 10 || isNaN(nota));
+
+    
+    somaNotas += nota;
+}
+
+
+let mediaFinal = somaNotas / totalAvaliacoes;
+
+
+document.write("<h3>Resultado do Aluno</h3>");
+document.write("Soma das notas: " + somaNotas + "<br>");
+document.write("Média final (6 avaliações): " + mediaFinal.toFixed(2));
+    </script>
+</body>
+</html>
